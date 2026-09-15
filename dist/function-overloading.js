@@ -1,3 +1,4 @@
+//Type this with function overloads.
 function findElement(selectorOrindex) {
     if (typeof selectorOrindex === "string") {
         return (`finding element using selector ${selectorOrindex}`);

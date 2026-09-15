@@ -1,3 +1,5 @@
+//A generic wait/retry helper
+
 async function retry<T>(fn: () => Promise<T>, times: number = 3): Promise<T> {
 
     for (let i = 0; i < times; i++) {

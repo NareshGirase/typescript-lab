@@ -1,3 +1,5 @@
+//Restrict the allowed values using TypeScript.
+
 type testResult = "Passed"|"Failed"|"Skipped"
 
 function actualTestResult(result:testResult){

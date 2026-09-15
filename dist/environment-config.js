@@ -1,19 +1,20 @@
-var enviroments;
-(function (enviroments) {
-    enviroments[enviroments["DEV"] = 0] = "DEV";
-    enviroments[enviroments["QA"] = 1] = "QA";
-    enviroments[enviroments["PROD"] = 2] = "PROD";
-})(enviroments || (enviroments = {}));
+//Use a TypeScript enum instead of magic strings, and write a function that returns the correct base URL.
+var Envioronment;
+(function (Envioronment) {
+    Envioronment[Envioronment["DEV"] = 0] = "DEV";
+    Envioronment[Envioronment["QA"] = 1] = "QA";
+    Envioronment[Envioronment["PROD"] = 2] = "PROD";
+})(Envioronment || (Envioronment = {}));
 function getBaseURL(env) {
     switch (env) {
-        case enviroments.DEV:
+        case Envioronment.DEV:
             return "https://dev.com";
-        case enviroments.QA:
+        case Envioronment.QA:
             return "https://qa.com";
-        case enviroments.PROD:
+        case Envioronment.PROD:
             return "https://prod.com";
     }
 }
-let envURL = enviroments.QA;
-console.log(getBaseURL(envURL));
+let baseURL = Envioronment.QA;
+console.log(getBaseURL(baseURL));
 export {};

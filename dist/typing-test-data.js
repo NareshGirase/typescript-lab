@@ -1,3 +1,4 @@
+// Convert this to TypeScript, ensuring username and password are strings and the function's return shape is explicit.
 function login(username, password) {
     return {
         username,

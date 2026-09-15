@@ -1,3 +1,4 @@
+//Restrict the allowed values using TypeScript.
 function actualTestResult(result) {
     console.log(`Test result ${result}`);
 }

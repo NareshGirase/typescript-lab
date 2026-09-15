@@ -1,3 +1,4 @@
+//Define an interface for the expected response and write a typed assertion function.
 interface UserResponse {
     id: number,
     name: string,

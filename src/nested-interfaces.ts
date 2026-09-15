@@ -1,4 +1,4 @@
-//nested interfaces
+//Model the full shape with nested interfaces.
 
 interface Address {
     street: string,

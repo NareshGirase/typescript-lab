@@ -1,4 +1,4 @@
-//nested interfaces
+//Model the full shape with nested interfaces.
 const checkout = {
     customerName: 'Naresh',
     email: 'naresh@gmail.com',

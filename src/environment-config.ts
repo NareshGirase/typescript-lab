@@ -1,20 +1,26 @@
-enum enviroments {
+//Use a TypeScript enum instead of magic strings, and write a function that returns the correct base URL.
+enum Envioronment {
     DEV,
     QA,
     PROD
 }
-function getBaseURL(env: enviroments): string {
+
+function getBaseURL(env: Envioronment): string {
     switch (env) {
-        case enviroments.DEV:
+        case Envioronment.DEV:
             return "https://dev.com"
 
-        case enviroments.QA:
+
+        case Envioronment.QA:
             return "https://qa.com"
 
-        case enviroments.PROD:
+
+        case Envioronment.PROD:
             return "https://prod.com"
+
+
     }
 }
 
-let envURL:enviroments = enviroments.QA
-console.log(getBaseURL(envURL))
+let baseURL = Envioronment.QA
+console.log(getBaseURL(baseURL))

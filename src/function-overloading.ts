@@ -1,3 +1,5 @@
+//Type this with function overloads.
+
 function findElement(slector: string): string;
 function findElement(index: number): string;
 

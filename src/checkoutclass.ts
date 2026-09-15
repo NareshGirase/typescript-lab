@@ -1,3 +1,5 @@
+//Design a generic base class where each page defines its own locator shape.
+
 import { BasePage } from "./generic-class.js";
 
 interface checkoutLocators {

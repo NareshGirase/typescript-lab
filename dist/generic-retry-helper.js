@@ -1,3 +1,4 @@
+//A generic wait/retry helper
 async function retry(fn, times = 3) {
     for (let i = 0; i < times; i++) {
         try {
